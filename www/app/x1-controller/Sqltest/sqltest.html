@@ -1,0 +1,51 @@
+<ion-view title="Handleliste" ng-controller="SqltestController as vm" ng-init="vm.SqltestController()">
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">SQL test</h1>
+    </ion-header-bar>
+    <ion-content class="">
+
+        <div class="list">
+
+            <div class="padding">
+                <button ng-click="vm.resetDatabase()" type="submit" class="button button-block button-positive">
+                    reset database
+                </button>
+            </div>
+            <div class="padding">
+                <button ng-click="vm.insertPerson()" type="submit" class="button button-block button-positive">
+                    lagre person
+                </button>
+            </div>
+            <div class="padding">
+                <button ng-click="vm.insertPersonWithSamePersonGuid()" type="submit" class="button button-block button-positive">
+                    insertPersonWithSamePersonGuid
+                </button>
+            </div>
+            <div class="padding">
+                <button ng-click="vm.insertPersonWithSameUsername()" type="submit" class="button button-block button-positive">
+                    insertPersonWithSameUsername
+                </button>
+            </div>
+            <div class="padding">
+                <button ng-click="vm.insertPersonWithSameEmail()" type="submit" class="button button-block button-positive">
+                    insertPersonWithSameEmail
+                </button>
+            </div>
+            <div class="padding">
+                <button ng-click="vm.updatePerson()" type="submit" class="button button-block button-positive">
+                    updatePerson
+                </button>
+            </div>
+        </div>
+
+        <ion-list>
+
+            <div class="item" ng-repeat="temptemp in vm.persons" type="item-text-wrap">
+                <div class="container">
+                    {{temptemp.displayname}}
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+
+</ion-view>

@@ -5,6 +5,6 @@
 - Create skeleton code with Ionic CLI: 
 > ionic start mysweetapp blank
 
-Delete the content inside the folder 'www'.
-Copy content from this repository
+- Delete the content inside the folder 'www'.
+- Copy content from this repository
 
